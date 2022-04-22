@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+*:focus {
+    border: rgba(0, 0, 0, 0.5) dashed 1px!important;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -289,7 +293,6 @@ a:hover {
 
 .navbar {
     margin-bottom: 0;
-    z-index: 1;
 }
 
 .navbar-brand {
@@ -319,7 +322,6 @@ a:hover {
     padding-top: 2px;
     margin-right: -16px;
     float: right;
-    z-index: 1;
 }
 
 .nav > li {
@@ -359,7 +361,6 @@ a:hover {
 .nav-invert .navbar-brand {
     float: right;
     position: relative;
-    z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -516,7 +517,6 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -527,7 +527,6 @@ button {
 
 .showScrollTop {
     font-size: 14px;
-    opacity: 1;
 }
 
 a[data-lightbox] {
@@ -547,7 +546,6 @@ a[data-lightbox]:hover::before {
     background: rgba(0, 0, 0, .6);
     color: #FFF;
     font-weight: 100;
-    z-index: 1;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -615,7 +613,6 @@ a[data-lightbox]:hover img {
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
-    z-index: 1;
     opacity: 0.4;
 }
 
